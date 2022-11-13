@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p { /*indica que que o parágrafo é tipo um 'filho' da div. Só modifica o parágrafo que estiver dentro de uma div*/
+            display: none; /*none = nada. configurado para não aparecer nada*/
+        }
+
+        div:hover > p {
+            display: block; /*block=mostrar*/
+            color: whitesmoke;
+            background-color: red;
+            width: 300px;
+        }
+        div:hover {
+            color: red;
+        }
+
+        #oq:hover > p {
+            color: rgb(20, 147, 220);
+            background-color:rgb(199, 186, 170) ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p> 
+    <div>
+        Passe o mouse aqui! <br>
+        <p>Texto escondido</p>
+    </div>
+
+    <div id="oq">
+        Meu nome é:
+        <p>Bruno. Muito prazer em conhecer você!</p>
+        <p>Que dia vamos sair?</p>
+    </div>
+
+    <p>Fim do Exemplo</p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+@charset "UTF-8"; /* Utilizado para a possibilitação de uso de caracteres especiais*/
+
+ * {
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ body {
+    background-image: linear-gradient(to right, #404040, #BFBFBF);
+ }
+
+ main {
+    background-color: #F2F2F2;
+    border-radius: 10px; /*deixa a borda arredondada*/
+    width: 600px; /*largura da parte branca*/
+    padding: 10px; /*espaçamento*/
+    margin: auto;/*centraliza o contéudo dentro da main neste caso*/
+    box-shadow: 5px 5px 15px #404040; /*cria uma 'sombra' na borda direita e inferior - shadow is sombra in portuguese*/
+ }
+
+ h1 {
+    color:#10FE0D; /*cor do texto do título*/
+    text-align: center;/*texto alinhado no centro*/
+    text-shadow: 1px 1px 2px #0c810a;
+ }
+
+ h2 {
+    color:#404040; /*cor do texto do subtítulo*/
+ }
+ p {
+    text-align: justify;
+ }

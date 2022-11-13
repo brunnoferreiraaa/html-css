@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        /*SELETORES PERSONALIZADOS
+        # = id
+        . = class
+        := pseudo-class
+        :: = pseudo-elements  
+        > = children
+        */
+
+         body {
+
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(48, 47, 47);
+           
+
+            }
+
+            a {
+                color: red;
+                font-weight: bold; /*texto em negrito*/
+                font-size: 2em; /*tamanho da fonte/letra. 1em e igual a mais ou menos 16px*/
+                text-transform: uppercase;  /*todo o texto fica maiúsculo */
+                text-decoration: none;
+            }
+            
+            a:visited { /*se eu já tiver visatado este site a cor deste link deverá ser  amarelo-ouro*/
+                color: darkgoldenrod;
+            }
+
+            a:hover { /*quando passar o mouse por cima*/
+                text-decoration: underline; /*sem linha por baixo no link*/
+                color: wheat;
+            }  
+
+            a:active{ /*link ativo, quando eu estiver pressionando o mesmo*/
+                color: yellow;
+            }
+
+            a::after{ /*psedoelementos precisa de 2 dois pontos*/
+                content: '☚'; /*significa conteúdo*/
+                text-decoration: none;
+                font-weight: normal;
+                font-size: 1em;
+                color: whitesmoke;
+                text-transform: lowercase; /*todo o texto fica minúsculo */
+                padding-left: 3%;
+            }
+
+            a::before{
+                content: '✵';
+                color: darkorchid;
+            }
+
+            h1 {
+                color: whitesmoke;
+                text-align: center;
+                font-size: 3em; /*tamanho da fonte/letra. 1em e igual a mais ou menos 16px*/
+            }  
+
+            .ad::before{
+                content: '☹';
+                color: yellow;
+            }
+
+            .ad::after{
+                content: '✘';
+                color: red;
+            }
+    </style>
+   
+    <title>Links</title>
+</head>
+<body>
+    <h1>Personalizando Links</h1> <!--pseudoclasses são palavras que definem o estado dos elementos dentro do HTML-->>
+
+     <ul>
+        <li><a href="https://www.instagram.com/bruno_ffzinho/" target="_blank">INSTAGRAM</a></li>
+        <li><a href="https://www.facebook.com/brunodecarvalhoferr/" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com/bruno_ffzinho/" target="_blank">Twitter</a></li>
+        <li> <a  href="
+            https://www.honda.com.br
+            " class="ad" target="_blank">honda</a></li>
+     </ul>
+
+</body>
+</html>

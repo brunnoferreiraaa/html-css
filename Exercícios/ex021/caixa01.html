@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas</title>
+    <style>
+        h1 {
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            display: block; /*ocupa a linha inteira, por padrão o h1 já é block*/
+            border: 10px double darkslateblue;
+            /*
+            simplicação deste pedaço do código - NESTA ORDEM:
+            border-width: 10px;
+            border-style: double;
+            border-color: darkslateblue;
+           
+            */
+                 
+            /*simplicação deste pedaço do código
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+
+            Quando colocado somente um valor, este vale para todos os lados (topo,direita,embaixo e esquerda
+            
+            se colocado dois valores como padding: 10px 20px;
+            Estes equivalem para alternamento de posições.
+            10px para o topo, 20px para a direita, 10px para baixo, e 20px para a esquerda )
+            */
+            margin: auto; /*centraliza a caixa, independente do tamanho da tela*/
+            outline: 5px dashed salmon; /*dashed - traços sequenciais não interligados entre si*/
+
+            /*
+            simplicação deste pedaço do código - NESTA ORDEM:
+             outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon; - localizado entre a borda e a margem
+            */
+        }
+
+               
+           
+        
+        a{
+            border: 5px dotted red;/*pontilhado*/
+            padding: 10px;
+            /*display:block; - posso mudar largura e altura
+            display:inline; não posso modificar largura e altura
+            display:inline-block; - pega algumas configurações inline e algumas configurações block. Posso mudar altura e largura aqui por exemplo, pois são configurações block  e o elemento vai continuar inline, ou seja, na mesma linha do conteúdo do parágrafo neste caso.*/
+            display:inline-block;
+            height: 80px;
+        }
+
+        p {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level. </a>Vamos ver como tudo isso funciona na prática.</p>
+</body>
+</html>
