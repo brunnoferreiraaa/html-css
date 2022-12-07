@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+            #container{
+                background-image: url(imagens/target001.png);
+                background-size: 100% 100%; /*largura e altura*/
+                position: relative; /*Por padrão toda a caixa tem o posicionamento relativo*/
+                height: 500px;
+                padding: 10px;
+                background-color: purple;
+            }
+
+            #conteudo{
+                background-image: url(imagens/target001.png);
+                background-size: 100% 100%;
+                position: absolute; /*abre margem para configurar distâncias como o : top e o left.*/
+                height: 200px;
+                width: 400px;
+                background-color: yellow;
+                left: 50%; 
+                top: 50%;
+                transform: translate(-50%, -50%);/*por padrão a transformação é da direita para baixo. Quando se adiciona valores negativos a transformação inverte, passando da esquerda para cima.  */
+            }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo" ></article>
+    </section>
+</body>
+</html>
