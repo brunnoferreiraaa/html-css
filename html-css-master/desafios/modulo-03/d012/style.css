@@ -161,10 +161,22 @@ footer > p > a:hover{
         width: 300px;
     }
 
+    footer{
+        height: 130px;
+    }
+
     footer > p{
         font-size: 0.9em;
         padding-left: 5px;
         padding-right: 5px;
 
     }
+
+    .img-footer{
+        padding-top: 20px;
+        height: 30px;
+        width: 30px;    
+        
+    }
 }
+
