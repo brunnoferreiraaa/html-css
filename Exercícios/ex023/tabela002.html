@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: whitesmoke;
+        }
+
+        h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 0px  black;
+            font-variant: small-caps;
+            font-size: 2em;
+            padding-top: 13px;
+        }
+
+        div{
+            
+            width: 650px;
+            background-color: rgb(77, 75, 75);
+            height: 65px;
+            margin: auto;
+            margin-bottom: 30px;
+            border-radius: 20px;
+            
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            margin: auto;
+            position: relative;
+        }
+
+       thead, tfoot{
+            background-color: gray;
+            color: white;
+         }
+
+            th,td{
+                border: 1px solid black;
+                padding: 10px;
+            }
+
+            .black,th{
+                background-color: rgb(77, 75, 75);
+                text-align: left;
+            }
+
+            caption{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 1.5em;
+                background-color: rgb(180, 180, 180);
+                color: white;
+                text-shadow: 1px 1px 0px  black;
+                font-variant: small-caps;
+                padding: 10px;
+                border-radius: 10px 10px 0px 0px;
+            }
+
+            tbody > tr:nth-child(even){ /*pseudoclasse- th filho de tr. even - par, (pode ser impar tbm odd) toda linha par vai ter cor cinza claro.
+             outro jeito:  tbody > tr:nth-child(3n) a cada 3 tres linhas a cor de fundo muda, só configurar o número de linhas que deseja que seja o intervalo entre uma colorida e uma linha normal.   */
+                background-color: lightgray;
+            }
+
+            thead > tr > th{
+                position: sticky; /*sticky - colado*/
+                top: -1px;
+                /*caso precise:  adicione a cor de fundo, caso só o texto venha a acompnhar a barra de rolagem*/
+            }
+
+            td{
+              text-align: left;
+            }
+
+            .number{
+                text-align: right;
+            }
+
+            #num1, #num2{
+                text-align: right;
+            }
+
+            tr:hover{
+                border: 2px  solid crimson;
+            }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Trabalhando com Tabelas Grandes</h1>
+    </div>
+
+    <table>
+        <!--Anatomia para tabelas grandes!
+            CAPTION - 'legenda' da tabela, não colocar tr, td, ou th! funciona como um parágrafo ou título.
+        THEAD - CABEÇA DA TABELA
+            TR,TD,TH
+        TBODY  - CORPO DA TABELA
+            TR,TD,TH
+        TFOOT - PÉ DA TABELA
+            TR,TD,TH        
+        -->
+
+        <caption>População das Unidades Federativas</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Estado</th> <!--scope col -  indicará que estado é título(ou está na mesma coluna que conteúdo) -->
+                <th scope="col">População</th>
+                <th scope="col" style="width: 30px;">Porcentagem</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="number"> 49 919 049</td>
+                <td class="number">21.9%</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="number">21 168 791</td>
+                <td class="number">10.1%</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">17 264 943</td>
+                <td class="number">9.2%</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="number">14 016 906</td>
+                <td class="number">7,1%</td>
+            </tr>
+
+            <tr>
+                <td>Paraná</td>
+                <td class="number">10 444 526</td>
+                <td class="number">5,4%</td>
+            </tr>
+
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="number">10 693 929</td>
+                <td class="number">5,4%</td>
+            </tr>
+
+            <tr>
+                <td>Pernambuco</td>
+                <td class="number">8 796 448</td>
+                <td class="number">4,5%</td>
+            </tr>
+
+            <tr>
+                <td>Ceará</td>
+                <td class="number">8 452 381</td>
+                <td class="number">4,3%</td>
+            </tr>
+
+            <tr>
+                <td>Pará</td>
+                <td class="number">8 777 124</td>
+                <td class="number">4,1%</td>
+            </tr>
+
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="number">6 248 436</td>
+                <td class="number">3,4%</td>
+            </tr>
+
+            <tr>
+                <td>Goiás</td>
+                <td class="number">6 003 788</td>
+                <td class="number">3,4%</td>
+            </tr>
+
+            <tr>
+                <td>Maranhão</td>
+                <td class="number">6 574 789</td>
+                <td class="number">3.4%</td>
+            </tr>
+
+            <tr>
+                <td>Amazonas</td>
+                <td class="number">3 483 985</td>
+                <td class="number">2,0%</td>
+            </tr>
+
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="number">3 514 952</td>
+                <td class="number">1,9%</td>
+            </tr>
+
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="number">3 567 234</td>
+                <td class="number">1,7%</td>
+            </tr>
+
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="number">3 560 903</td>
+                <td class="number">1,7%</td>
+            </tr>
+
+            <tr>
+                <td>Alagoas</td>
+                <td class="number">3 365 351</td>
+                <td class="number">1,6%</td>
+            </tr>
+
+            <tr>
+                <td>Piauí</td>
+                <td class="number">3 289 290</td>
+                <td class="number">1,6%</td>
+            </tr>
+
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="number">3 094 325</td>
+                <td class="number">1,4%</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+                <tr>
+                    <th scope="row" class="black">Total de Habitantes:</th> <!--conteúdo está na mesma linha que o título -->
+                    <td class="black" class="number" id="num1">200.000.000</td>
+                    <td class="black" class="number" id="num2">90%</td>
+                </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

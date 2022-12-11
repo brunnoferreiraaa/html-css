@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            background-color: rgb(199, 197, 197);
+        }
+
+        main{
+            background-image: linear-gradient( to bottom, crimson, whitesmoke, cornflowerblue);
+            width: 600px;
+            display: block;
+            margin: auto;
+            height: 100vh;
+            border-radius: 20px;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 3.5em;
+            font-family:  'Courier New', Courier, monospace;
+            color: whitesmoke;
+            text-decoration: underline;
+            padding: 20px;
+        }
+        table{
+            margin: auto;
+            border-collapse: collapse;    
+            width: 300px;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+    <title>Tabelas</title>
+</head>
+<body>
+    <main>
+        <h1>Mesclagem de Cédulas</h1>
+        <table>
+            <tr>
+                <td>A</td>
+                <td colspan="2">B</td>
+            </tr>
+            <tr>
+                <td rowspan="3">C</td>
+                <td>D</td>
+                <td>E</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>G</td>
+            </tr>
+            <tr>
+        
+                <td>H</td>
+                <td>I</td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>

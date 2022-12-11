@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas com HTML</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 3em;
+            color: purple;
+            text-shadow: 2px 2px 0px rgb(40, 90, 184);
+        }
+
+        table{
+            width: 400px;
+            border-collapse: collapse; /*bordas se encostam - colocar propriedade border-collapse dentro de table!!! */
+             /* border-collapse: separate; - bordas da tabela ficam separadas*/
+             margin: auto;
+             height: 400px;
+        }
+        td{
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+            vertical-align: top; /*alinhamento vertical - pode ser top- topo,  middle - meio  e  bottom - embaixo  */
+        }
+
+        .gray{
+            background-color: gray;
+        }
+
+        #cell-b4{
+            background-color: cornflowerblue;
+        }
+
+        div{
+            margin-top: 50px;
+        }
+
+        .number{
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Tabela com HTML</h1>
+    <div>
+
+        <!--
+            HIERARQUIA DE TABELAS (simples)
+            TABLE - tabela
+                TABLE ROW (tr) - linha de tabela
+                TABLE HEADER (th) - cabeçalho de tabela
+                TABLE DATA - dado de tabela  
+        -->
+        <table>
+            <tr> <!--Primeira linha-->
+                <td>A1</td>
+                <td>B1</td>
+                <td>C1</td>
+            </tr>
+            <tr>
+                <td>A2</td> <!--Segunda linha-->
+                <td>B2</td>
+                <td>C2</td>
+            </tr>
+            <tr class="gray"> <!--Terceira linha-->
+                <td>A3</td>
+                <td class="number">B3</td>
+                <td class="number">C3</td>
+            </tr>
+            <tr>
+                <td>A4</td> <!--Quarta linha-->
+                <td id="cell-b4">B4</td>
+                <td>C4</td>
+            </tr>
+
+            <tr>
+                <td>A5</td> <!--Quinta linha-->
+                <td>B5</td>
+            </tr>
+
+            <tr>
+                <td>A6</td> <!--Sexta linha-->
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
