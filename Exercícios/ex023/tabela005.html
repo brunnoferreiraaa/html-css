@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        td,th{
+            padding: 10px;
+            border: 1px solid black;
+            background-color: cornflowerblue;
+        }
+
+        th{
+            color: white;
+        }
+
+        td{
+            color: whitesmoke;
+        }
+        caption{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.7em;
+            padding: 10px;
+        }
+    </style>
+    <title>Aplicando conhecimentos</title>
+</head>
+<body>
+    <table>
+        <caption>Tabela teste </caption>
+        <thead>
+                 <tr>
+                    <th colspan="4" scope="colgroup">Jovens</th>
+                </tr>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Altura</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Bruno</td>
+                <td>18</td>
+                <td>1,80</td>
+                <td>Estudante</td>
+            </tr>
+
+            <tr>
+                <td>João</td>
+                <td>16</td>
+                <td>1,70</td>
+                <td>Estudante</td>
+            </tr>
+
+            <tr>
+                <td>Vanessa</td>
+                <td>20</td>
+                <td>1,65</td>
+                <td>Recepcionista</td>
+            </tr>
+
+            <tr>
+                <td>Priscila</td>
+                <td>19</td>
+                <td>1,72</td>
+                <td>Modelo</td>
+            </tr>
+
+            <th colspan="5" scope="colgroup">Adultos</th>
+
+            <tr>
+                <td>Fernando</td>
+                <td>33</td>
+                <td>1,89</td>
+                <td>Atleta</td>
+            </tr>
+
+            <tr>
+                <td>Felipe</td>
+                <td>34</td>
+                <td>1,80</td>
+                <td>Empresário</td>
+            </tr>
+
+            <tr>
+                <td>Samanta</td>
+                <td>29</td>
+                <td>1,65</td>
+                <td>Roteirista</td>
+            </tr>
+
+            <tr>
+                <td>Claúdia</td>
+                <td>50</td>
+                <td>1,60</td>
+                <td>Diarista</td>
+            </tr>
+
+            <tr></tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <table>
+        <caption>Tabela 2</caption>
+        <thead>
+         <tr>
+            <th scope="col">Classificação</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Nacionalidade</th>
+            <th scope="col">Idade</th>
+         </tr>
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Jovens</th>
+                <td>Charllote</td>
+                <td>Inglesa</td>
+                <td>19</td>
+            </tr>
+
+            <tr>
+                <td>Bruno</td>
+                <td>Brasileiro</td>
+                <td>18</td>
+            </tr>
+
+            <tr>
+                <td>Ariana</td>
+                <td>Americnaa</td>
+                <td>21</td>
+            </tr>
+
+            <tr>
+                <th rowspan="3" scope="rowgroup">Adultos</th>
+                <td>Rodrigo</td>
+                <td>Argentino</td>
+                <td>33</td>
+            </tr>
+
+            <tr>
+                <td>Olivar</td>
+                <td>Francês</td>
+                <td>36</td>
+            </tr>
+
+            <tr>
+                <td>Paulo</td>
+                <td>Peruano</td> 
+                <td>32</td>  
+            </tr>
+
+            <tr>
+                <th rowspan="3" scope="rowgroup">Idosos</th>
+                <td>Sebastina</td>
+                <td>Brasileira</td>
+                <td>78</td>
+            </tr>
+
+            <tr>
+                <td>Maria do Carmo</td>
+                <td>Brasileira</td>
+                <td>67</td>
+            </tr>
+
+            <tr>
+                <td>Francisco</td>
+                <td>Português</td>
+                <td>84</td>
+            </tr>
+
+            
+        </tbody>
+
+    </table>
+</body>
+</html>
