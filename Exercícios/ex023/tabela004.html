@@ -55,15 +55,15 @@
         <caption class="text">Filmes Favoritos</caption>
         <thead>
             <tr>
-                <td>Grupos </td>
-                <td>Nomes</td>
-                <td colspan="3">Filmes</td>
+                <th scope="col">Grupos </th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th> <!--colgroup - mais de uma linha por coluna-->
             </tr>
         </thead>
 
         <tbody>
             <tr>
-                <th rowspan="3">Mulheres</th>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -85,7 +85,7 @@
             </tr>
 
             <tr>
-                <th rowspan="3">Homens</th>
+                <th rowspan="3" scope="rowgroup">Homens</th>
                 <td>Bruno Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Aminésia</td>
