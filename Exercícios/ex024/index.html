@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iframe</title>
     <style>
+
+        *{
+            padding:0;
+            margin:0;
+        }
+
         body{
            
             font-family: Arial, Helvetica, sans-serif;
@@ -15,8 +21,11 @@
             text-align: center;
             color: chartreuse;
             font-size: 3em;
-            padding: 20px;
+            padding: 10px;
             font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 50px;
+            font-variant: small-caps;
+            text-shadow: 2px 2px 0px whitesmoke;
         }
 
         p{
@@ -25,20 +34,37 @@
         }
 
         main{
-            width:800px;
             margin: auto;
-            background-color: grey;
+            background-color: black;
             padding: 20px;
         }
+
+        iframe{
+            height:400px;
+            width:400px;
+            display: block;
+            margin: auto;
+            border: 2px solid cornflowerblue;
+        }
+
     </style>
 </head>
 <body>
     <main>
-        <h1>Testando iframes</h1>
-        <p>O site do <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe> permite o iframe </p> <br> <br>
-        <p>Porém o site do  <iframe src="https://www.google.com" frameborder="0"></iframe> google não permite o iframe por questão de segurança</p> <br> <br>
-        <p>E o site do Terra? <iframe src="https://www.terra.com" frameborder="1"></iframe> Conseguimos navegar por um iframe</p> <br> <br>
-        <p>Iframe aleatório <iframe src="https://iftm.edu.br/" frameborder="2" style="border:red";></iframe></p>
+        <!--Por padrão o iframe tem o tamanho de 300px por 150px 
+        Podemos mudar isso atráves do style inline, ou seja dentro da tag igrame msm ou no estilo local ou externo. Entretanto o style inline é mais 'fraco' que outros, por isso sua configuração é facilmente sobreposta.-->
+        <h1>Testando Iframes</h1>
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" scolling="no"></iframe> permite o  <br> <br> <!--scolling - rolagem do iframe - pode ser yes ou no-->
+
+        <iframe src="https://www.google.com" frameborder="0" > 
+            <a href="https://www.google.com"></a> 
+        </iframe></p> <br> <br>
+
+       <iframe src="https://www.terra.com" frameborder="1" height="300px" width="400px"></iframe><br> <br>
+
+        <iframe src="https://iftm.edu.br/" frameborder="2" ></iframe>
+
+        
     </main>    
 </body>
 </html>

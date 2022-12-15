@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px;
+            background-image: url(agua2.jpg);
+           color: whitesmoke;
+           font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+           text-shadow: 1px 1px 0px  black;
+            
+        }
+
+        iframe{
+            width: 90vw;
+            height: 60vh;
+            border: 2px solid black;
+            display: block;
+            margin: auto;
+        }
+
+        h1{
+            font-variant: small-caps;
+            text-align: center;
+            font-size: 3em;
+        }
+
+        p{
+            font-size: 1em;
+            padding: 50px;
+        }
+
+        ul{
+            margin-left: 70px;
+            color: chartreuse;
+        }
+
+        ul > li >a{
+            color: chartreuse;
+            text-decoration: none;
+        }
+
+        a:hover{
+            text-shadow: 1px 1px 0px green;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma Escolha</h1>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt sint recusandae numquam nisi praesentium nulla laboriosam, qui labore dolor, tempora repellendus dolorum architecto autem ea ducimus dignissimos amet dolore nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas expedita, labore id perferendis laborum dolores nostrum odio deserunt voluptatem hic ratione officiis accusantium exercitationem possimus, quae, facere non dignissimos! Alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit explicabo repellat, fugiat sequi nostrum id voluptatem corrupti! Magnam, impedit alias! Dolor iusto aperiam ipsa accusantium totam est eius quisquam repellat.</p>
+
+    <ul>
+        <li type="square"><a href="paginas-extras/page01.html" target="frame">Primeira página</a></li>
+        <li type="square"><a href="/ex023/tabela002.html" target="frame">Segunda página</a></li>
+        <li type="square"><a href="/desafios/desafio2.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <br>
+
+    <iframe srcdoc="<h1 style='text-align: center; color:whitesmoke; text-shadow: 3px 3px 0px black; margin-top: 30px;'  > Clique nos links acima para ter a experiência de Navegação</h1> <img style='width: 150px; height:150px; padding:10px; display:block; margin:auto;' src='seta.png'>" name="frame" ></iframe> <!--srcdoc permite adicionar conteúdo dentro da propriedade-->
+
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde perferendis ratione exercitationem suscipit similique rerum veniam quis cupiditate, doloremque facilis ea? Cumque est excepturi dicta ratione aliquid blanditiis laudantium dolorum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro enim odio ea, suscipit asperiores tenetur earum tempora. Corporis recusandae, culpa facere esse fuga natus non ut minus voluptates quod rem?</p>
+</body>
+</html>
