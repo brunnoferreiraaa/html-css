@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens diferentes</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+
+    <p>Você está vendo a imagem completa? Experimente ampliar o tamanho da sua janela para aproveitar a melhor experiência</p>
+
+    <picture>
+        <source media="(max-width: 799px)" srcset="imagens/paisagem-p.png"> <!--Caso a tela tenha um tamanho máximo de 799px, a imagem a ser carregada vai ser esta, ao invés da que está na tag img. -->
+        <source media="(max-width:1210px )" srcset="imagens/paisagem-m.png">
+        <img src="imagens/paisagem-g.png" alt="pessoa e paisagem">
+    </picture>
+</body>
+</html>
