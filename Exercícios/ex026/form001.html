@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+           font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulários</h1>
+
+    <form  action="cadastro.php" method="post" autocomplete="off"><!--Todo formulário deve estar dentro da tag form -
+         (autocomplete) - dados já são sugeridos para o preenchimento. off vc desliga essa sugestão e on vc deixa ligado 
+        (action) - para onde os os dados serão enviados, neste caso para um arquivo php. 
+        (method) - (get) - por padrão esse é o valor de method, aqui os dados aparecem na url. (post) - os dados já não aparecem na url, porém ainda podemos vê-los.
+        Quando os dados não forem sensíveis como por exemplo, o primeiro nome, usamos o GET. Mas possui um limite de 3000 bytes. Agora quando quisermos enviar dados, sensíveis como senhas, número de cartão, fotos e etc, utilizaremos o POST.
+        Get é um pouco mais rápido que o post, porém essa diferença não é significante nos dias atuais. --> 
+        
+        <p><label for="inome">Nome:</label> <input type="text" name="nome"  id="inome"></p> <!input type text --caixa de texto-->
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"> </p> <!--dentro do for colocar o id -->
+        <p><input type="submit" value="Enviar"></p> <!--input do tipo submeter - usado para botões de enviar por exemplo -->
+    </form>
+
+</body>
+</html>
