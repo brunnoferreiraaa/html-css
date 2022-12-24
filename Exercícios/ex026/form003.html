@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            font-family: Arial, Helvetica, sans-serif ;
+        }
+        h1{
+            border: 1px solid rgb(64, 117, 11);
+            max-width: 600px;
+            padding: 10px;
+            text-align: center;
+            text-shadow: 2px 2px 2px rgb(64, 117, 11);
+            font-variant: small-caps;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: crimson;
+            color: white;
+            border-radius: 20px;
+            margin:auto;
+        }
+
+        form{
+            margin-top: 40px;
+            margin-left: 40px;
+            border: 2px solid rgb(78, 173, 202);
+            border-radius: 10px;
+            width: 500px;
+            padding: 10px;
+        }
+
+        main{
+            display: block;
+            margin: auto;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Formulário de Teste</h1>
+    <main>
+        <form method="get" autocomplete="on">
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required placeholder="Nome completo" autocomplete="name" maxlength="35" size="20">
+            </p>
+        
+            <p>
+                <label for="imedia">Média</label>
+                <input type="number" name="media"  id="imedia" min="0" max="10" placeholder="Digite uma nota de 0 a 10" step="0.1" required value="6" >
+                <!--step - aceita colocar valores quebrados, como 4,7. A nota varia de 0,1 até 10
+                type number - só aceita números
+                min - número mínimo aceito
+                max- número máximo aceito
+                value - neste caso é o número que já vai aparecer pro usuário como sugestão. Detalhe: quando se tem o value o placeholder passa a não funcionar!  -->
+            </p>
+            <p>
+                <label for="imes">Período letivo</label>
+                <input type="month" name="mes" id="imes" value="2022-12">
+                <!--value - neste caso é a data que  já vai aparecer pro usuário como sugestão. Detalhe: quando se tem o value o placeholder passa a não funcionar!-->
+            </p>
+            <p>
+                <label for="idia"></label>
+                <input type="date" name="dia" id="dia" value="2022-12-24">
+                <!--Permite colocar o dia tbm
+                Quando colocar data no value, tem q ser ao contrário. Ex:2022-12-25 -->
+            </p>
+            <p>
+                <label for="ihora"></label>
+                <input type="time" name="hora" id="hora" value="13:00">
+            </p>
+            <p>
+                <input type="submit" value="enviar">
+                <input type="reset" value="limpar">
+            </p>
+        </form>
+    </main>
+</body>
+</html>
