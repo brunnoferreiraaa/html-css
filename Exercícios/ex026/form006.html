@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastro.php">
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor" value="#00ff00"> <!--color - escolher/mostrar uma cor em uma paleta 
+            value - neste caso a cor inicial a ser mostrada vai ser um verde-->
+        </p>
+
+        <p>
+            <label for="inivel">Nível de Satisfação:</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="5"> <!--range - aparece uma barra de aumentar e diminuir (tipo a barra de volume)
+            Value - neste caso o nível de satisfação vai começar no 5, ou seja no máximo. -->
+        </p>
+
+        <p>
+            <label for="ifoto">Foto do perfil</label>
+            <input type="file" name="foto" id="ifoto"> <!--file - botão para escolher arquivo
+            Quando o usar input do tipo file, usar method:post !-->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

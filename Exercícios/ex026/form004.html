@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telefone e email</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            font-variant: small-caps;
+            text-shadow: 1.5px 1.5px 1.5px gray;
+        }
+        fieldset{
+            max-width: 400px;
+        }
+
+        legend{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mais um Exemplo de Formulário</h1>
+
+    <form action="castro.php" method="get" autocomplete="on">
+
+        <fieldset> <!--agrupamento de campos-->
+            <legend>Dados Pessoais </legend> <!--Título para caixa ou uma legenda-->
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="nome" minlength="10" maxlength="35" required autocomplete="name">
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" autocomplete="tel" required >
+                <!--Tel - usado para número de telefones/celulares.
+                    existem vários outros tipos de tel.(pesquisar mais sobre)
+                -->
+                <!--pattern - começa com ^ e termina com $
+                dígito pode ser representado por /d ou [0-9]-->
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
