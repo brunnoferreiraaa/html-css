@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/*Estilos para telas*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header{
+    background-color: rgb(112, 110, 110);
+}
+
+header > h1{
+text-align: center;
+}
+
+menu ul{
+    list-style-type: none; /*tira a bolinha da lista*/
+    background-color: grey;
+}
+
+menu li{
+    display: inline-block; /*coloca um item na frente do outro, porém ainda com algumas propriedades do display block*/
+    color: white;
+    background-color: rgb(31, 30, 30);
+    padding: 10px;
+}
+
+article{
+    display: block;
+    width: 600px;
+    margin: auto;
+}

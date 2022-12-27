@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css" media="all"> <!--media types - media screen, media print e media all(o que eu sei até agora). Não são colocadas entre parênteses. Media features - colocadas entre parênteses, são as: (orientation:portrait) e (orientation: landscape) -->
+
+    <!--media all - aplica as configurações deste arquivos a todos os tipos de tela, independentemente da resolução da tela do usuário. (all - todo/toda)-->
+
+    <link rel="stylesheet" href="estilos/retrato.css" media="screen and  (orientation:portrait)"> <!--Media do tipo tela tbm, quando a orientação do dispositivo for retrato, ou seja altura maior que largura, as configurações deste arquivo css serão aplicadas.-->
+
+    <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)"> <!--Media do tipo tela. Porém quando a tela for paisagem (orientation: landscape), ou seja largura maior que altura, as configurações deste css é que serão aplicadas.-->
+    <title>Media Query</title>
+</head>
+<body>
+    <h1>Mude a orientação do seu dispositivo!</h1>
+</body>
+</html>

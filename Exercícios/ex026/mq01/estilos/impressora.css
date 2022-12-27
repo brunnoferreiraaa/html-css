@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/*Estilo para impressoras*/
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+menu{
+    display: none; /*menu não aparecer para site versão impressora */
+}
+
+article{
+    width: 100%;
+}
+
+article::after{ /*depois do article adicione as seguintes alterações*/
+    content: 'Este site foi desenvolvido por www.brunocarvalho.com';
+}
