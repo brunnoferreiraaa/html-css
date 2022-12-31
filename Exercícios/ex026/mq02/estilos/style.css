@@ -1,3 +1,22 @@
 @charset "UTF-8";
 
 /*Para todos os tipos de tela (seja impressora, celular, computador e etc) */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #233eff;
+    background-size: contain; /*imagem tamanho original*/
+    background-repeat: no-repeat;
+}
+
+h1{
+    color: white;
+    padding: 10px;
+    text-shadow:  2px 2px 0px blue;
+}
