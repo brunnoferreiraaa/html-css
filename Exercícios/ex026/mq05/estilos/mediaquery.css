@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    
+    #burguer{
+        display:none ;
+    }
+    
+    nav{
+        display: block;
+    }
+
+    nav > ul > li > a{
+        border: 1px solid rgb(31, 30, 30);
+        border-radius: 5px;
+    }
+
+    #op1{
+        margin-left: 5px;
+    }
+
+    nav > ul > li{
+        display: inline-block;
+    }
+
+    main{
+        max-width: 800px;
+    }
+}
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!--link do ícon de menu  no google icons-->
+    <link rel="stylesheet" href="estilos/mediaquery.css">
+    <title>Media Query</title>
+</head>
+<body onresize="mudouTamanho">
+    <header>
+        <h1>Um Pouco Sobre Mim...</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span> <!-- menu é o nome do ícone do três risquinhos, estou chamando ele. Se eu colocasse favorite no lugar de menu, iria aparecer um coração.-->
+            
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Hobbies</a></li>
+                <li><a href="#">Músicas</a></li>
+                <li><a href="#">Filmes</a></li>
+                <li><a href="#">Séries</a></li>
+                <li><a href="#">Animes</a></li>
+                <li><a href="#">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Testando Media Queries </h2>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit hic doloribus accusamus excepturi quisquam esse minima. Necessitatibus saepe, corrupti totam fugit hic commodi, vero minus iusto cumque, suscipit quis soluta. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic laborum iusto nisi, minima accusantium, voluptas, minus quidem placeat iste unde quia! Minima doloremque nihil itaque harum id, voluptas ducimus quibusdam!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsum temporibus consequatur saepe consectetur reiciendis dicta sequi facere, tenetur ea obcaecati fugit. Repellendus, voluptates distinctio ut vero modi voluptatibus dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perspiciatis esse autem, mollitia quas error cupiditate iusto perferendis inventore dolores porro voluptates natus hic, odio minus aut in qui obcaecati.</p>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit amet, totam quisquam eveniet neque harum vitae odio vel sit maiores, veniam cumque. Optio voluptas unde quam eius molestiae facere consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ratione illum eligendi nemo reiciendis quo optio cupiditate, saepe provident ab earum atque odit doloribus! Est sit sequi quisquam magnam porro.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut magnam perspiciatis perferendis incidunt officia. Culpa incidunt, aut aliquid praesentium numquam debitis asperiores magni velit enim harum aperiam, quasi iusto maxime?
+            </p>
+        </article>
+    </main>
+    <script>
+
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){ /*se a largura da tela for maior ou igual a 768px meu menu terá um display block. se a tela for menor que o valor declarado o display passa a ser none  */
+               menu.style.display = 'block'   
+            } 
+            else{
+                menu.style.display = 'none' 
+            }
+        }
+
+        function clickMenu() {
+           if
+            (menu.style.display == 'block')
+            menu.style.display = 'none'  /*menu - (meu id) - o display do menu que era none(eu configurei pra ser none) passa a ser block */
+            else{
+                menu.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
