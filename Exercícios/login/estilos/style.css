@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/*
+Paleta de cores
+
+Verde: #49a09d
+Lilás: #5f2c82
+*/
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; /*borda passa a fazer parte da conta da largura da tela/div*/
+}
+
+body, html{
+    background-color: rgba(28, 25, 36, 0.685);
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*o top e o left configurado antes centraliza o vértice , e não a caixa em si. Fazendo assim a caixa fica centralizada independente da resolução da tela.*/
+    background-color: whitesmoke;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden; /*tudo que tiver fora da borda fica escondido*/
+    box-shadow: 3px 3px 10px rgb(34, 33, 33);
+    transition: width 0.4s, height 0.4s ; /*transição quando a largura e altura mudar*/
+    transition-timing-function:ease ; /*suaviza a animação*/
+}
+
+#login > #image{
+    background: #5f2c82 url(../imagens/noite-media.jpg) no-repeat;
+    background-size: 100% 100%;
+    height: 200px;
+    display: block;
+}
+
+#login > #form{
+    display: block;
+    padding: 10px;
+}
+
+#form > h1{
+    color: black;
+    text-shadow: 1px 1px 2px gray;
+    text-align: center;
+    margin-bottom: 10px;
+   
+}
+
+#form > p{
+    font-size: 1em;
+}

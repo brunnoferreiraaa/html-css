@@ -15,7 +15,7 @@ header{
 }
 
 header > h1{
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     font-variant: small-caps;
     color: whitesmoke;
@@ -32,7 +32,7 @@ header > h1{
 }
 
 #burguer:hover{
-    background-color: white;
+    background-color: whitesmoke;
     color: black;
 }
 
@@ -45,16 +45,18 @@ nav > ul{list-style-type: none;}
 nav > ul > li > a{
     display: block;
     padding: 10px;
+    margin: 1px;
     text-decoration: none;
     text-align: center;
     background-color: rgb(75, 73, 73);
     color: white;
     border-top: 2px solid rgb(114, 111, 111); /*borda só na parte superior */
+    margin-bottom: 4px;
 }
 
 nav > ul > li > a:hover{
     background-color: rgb(121, 117, 117) ;
-    transition: 0.4s;
+    transition: 0.3s;
 }
 
 main{
