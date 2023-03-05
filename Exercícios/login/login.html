@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de login</title>
+    <style>
+       *{
+        margin: 0px;
+        padding: 0px;
+       }
+
+       body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient( to top, rgb(114, 12, 114) ,  rgb(26, 24, 24) );
+        height: 100vh;
+        width: 98.5vw;
+       }
+
+        main{
+            padding: 15px;
+            max-width: 570px;
+            height: 500px;
+            margin: auto;
+        }
+
+        h1{
+            padding: 7px;
+            border: 1px solid whitesmoke;
+            margin-top: 50px;
+            color: chartreuse;
+            text-align: center;
+            font-variant: small-caps;
+            border-radius: 20px;
+            text-shadow: 2px 2px 2px black;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        section{
+            float: right;
+            margin-top: 55px;
+            padding-right: 10px;
+        }
+
+        img{
+            width: 220px;
+            float: left;
+            margin-top: 55px;
+            
+        }
+
+        input{
+            padding: 12px;
+            border-radius: 10px;
+            border: none;
+            border: 1px solid whitesmoke;
+            margin-top: 20px;
+        }
+
+        label{
+            color: white;
+        }
+
+        .enviar{
+            text-align: center;
+            margin-left: 55px ;
+            width: 264px;
+            margin-top: 40px;
+            background-color: rgb(99, 189, 9);
+            color: whitesmoke;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .enviar:hover{
+            background-color: rgb(19, 163, 19);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+                             
+    <main>
+        <h1>Crie Agora sua Conta</h1>
+        <form action="login.php" autocomplete="on" method="post">
+
+            <div>
+                <img src="imagens/BrolySSJ3.webp" alt="BrolySSJ3">
+            </div>
+
+            <section>
+                <div>
+                    <label for="inome">Nome:</label>
+                    <input  name="nome" id="inome" type="text" maxlength="35" size="30" autocomplete="name" required placeholder="Digite seu nome">
+                </div>
+                <div>
+                    <label for="iemail">E-mail:</label>
+                    <input type="email" name="email" id="iemail" required maxlength="40" autocomplete="email" placeholder="Digite seu email" size="30">
+                </div>
+                <div>
+                    <label for="isenha">Senha:</label>
+                    <input type="password" required id="isenha" name="senha" min="8"  max="14"  required placeholder="Crie sua senha"  size="30">
+                </div>
+                <div><input class="enviar" type="submit" value="Enviar"></div>
+            </section>
+        </form>
+    </main>
+</body>
+</html>

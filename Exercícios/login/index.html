@@ -17,16 +17,16 @@
             </div>
             <div id="form">
                 <h1>login</h1>
-                <p>Seja bem-vindo(a) novamente. Siga o caminho e faça login para fazer as configurações no seu ambiente.</p>
+                <p id="p">Seja bem-vindo(a) novamente. Siga o caminho e faça login para fazer as configurações no seu ambiente.</p> 
             </div>
 
             <form action="login.php" method="post" autocomplete="on">
-                <div class="campo">
+                <div id="black" >
                     <span class="material-symbols-outlined">
                         person
                         </span>
                     <input type="email" name="login" id="ilogin" placeholder="digite seu e-mail" autocomplete="email" required maxlength="40">
-                    <label for="ilogin">login</label>
+                    <label for="ilogin"><p class="sumir">login</p></label>
                 </div>
 
                 <div>
@@ -34,13 +34,14 @@
                         key
                         </span>
                     <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
-                    <label for="isenha">Senha</label>
+                    <label for="isenha"><p class="sumir">Senha</p></label>
                 </div>
-
-                <input type="submit" value="Entrar">
-                <a href="#">Esqueci a senha <span class="material-symbols-outlined">
-                    mail
-                    </span></a>
+                <br>
+                    <div id="div-button"><button ><input  class="submit"  type="submit" value="Enviar"></button> <br> 
+                        <a  class="esqueci" href="#">Esqueci minha senha <span class="material-symbols-outlined">
+                            mail
+                            </span> </a>
+                    </div>
             </form>
         </section>
     </main>
